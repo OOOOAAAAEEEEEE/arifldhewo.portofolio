@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    @apply bg-background;
+}
+p {
+    @apply font-roboto;
+    @apply antialiased;
+}
+
+a {
+    @apply font-roboto;
+    @apply antialiased;
+}
