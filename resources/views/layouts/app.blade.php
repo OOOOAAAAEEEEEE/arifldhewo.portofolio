@@ -8,6 +8,7 @@
     </head>
     <body>
         <main>
+            @include('components.onload')
             @yield("content")
         </main>
     @include("layouts.script")
