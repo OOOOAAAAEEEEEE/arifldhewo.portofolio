@@ -48,4 +48,33 @@ function loader() {
 
 loader();
 
-// realTime();
+const hiddenUps = document.querySelectorAll(".hiddenUp");
+const hiddenDowns = document.querySelectorAll(".hiddenDown");
+const hiddenLeft = document.querySelectorAll(".hiddenLeft");
+const hiddenRight = document.querySelectorAll(".hiddenRight");
+
+const observerY = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("showY");
+        } else {
+            entry.target.classList.remove("showY");
+        }
+    });
+});
+
+hiddenUps.forEach((el) => observerY.observe(el));
+hiddenDowns.forEach((el) => observerY.observe(el));
+
+const observerX = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("showX");
+        } else {
+            entry.target.classList.remove("showX");
+        }
+    });
+});
+
+hiddenLeft.forEach((el) => observerX.observe(el));
+hiddenRight.forEach((el) => observerX.observe(el));

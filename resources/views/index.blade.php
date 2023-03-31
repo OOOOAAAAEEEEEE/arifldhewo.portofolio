@@ -9,20 +9,23 @@
         </a>
     </div>
     {{-- * End Home Button  --}}
-        <div class="hidden" id="main_content">
+        <div id="main_content">
             <div class="h-screen flex flex-wrap">
                 {{-- ! Greeting Part --}}
-                <section class="w-full h-full bg-primary" id="home">
+                <section class="w-full h-full bg-primary overflow-hidden" id="home">
                     {{-- * Language Switcher --}}
-                    <div class="w-20 h-10 flex justify-evenly relative xs:top-4 xs:left-44 xs:translate-x-2" id="toggle" onclick="language()">
-                        <span class="absolute w-10 h-10 text-center -translate-x-5 rounded-l-2xl transition" id="id">
-                            <p class="relative top-2 text-background font-bold not-italic">ID</p>
-                        </span>
-                        <span class="absolute w-1 h-10 bg-primary"></span>
-                        <span class="absolute w-10 h-10 text-center translate-x-5 rounded-r-2xl transition bg-tertiary" id="en">
-                            <p class="relative top-2 text-background font-bold not-italic">EN</p>
-                        </span>
+                    <div class="hiddenRight">
+                        <div class="w-20 h-10 flex justify-evenly relative xs:top-4 xs:left-44 xs:translate-x-2" id="toggle" onclick="language()">
+                            <span class="absolute w-10 h-10 text-center -translate-x-5 rounded-l-2xl transition" id="id">
+                                <p class="relative top-2 text-background font-bold not-italic">ID</p>
+                            </span>
+                            <span class="absolute w-1 h-10 bg-primary"></span>
+                            <span class="absolute w-10 h-10 text-center translate-x-5 rounded-r-2xl transition bg-tertiary" id="en">
+                                <p class="relative top-2 text-background font-bold not-italic">EN</p>
+                            </span>
+                        </div>
                     </div>
+                    
                     {{-- * End Language Switcher --}}
 
                     <div class="xs:p-5 xs:relative xs:top-16">
@@ -32,8 +35,9 @@
                             </p>
                         </div>
                         {{-- * Content --}}
+                        <div class="hiddenLeft">
                             <p class="font-display text-6xl text-tertiary">
-                                {{ __("Howdy Hey!!!") }}
+                                {{ __("Hello There!!!") }}
                             </p>
                             <p class="text-background xs:text-xl mt-6 text-2xl">
                                 {{ __("I'm Arif Laksonodhewo. Welcome to my") }} <span class="text-tertiary font-extrabold">portofolio</span> page
@@ -43,6 +47,8 @@
                                     Next <i class="bi bi-play-circle-fill"></i>
                                 </a>
                             </div>
+                        </div>
+                            
                         {{-- * End Content --}}
                     </div>
                 </section>
@@ -51,7 +57,7 @@
                 {{-- ! About Me Part --}}
                 <section class="w-full h-1/2 bg-tertiary p-5 relative order-4" id="about">
                     {{-- * Content --}}
-                    <div class="xs:relative xs:top-6">
+                    <div class="xs:relative xs:top-6 hiddenUp">
                         <p class="xs:text-4xl text-center text-background xs:mb-3">
                             <i class="bi bi-person"></i>
                         </p>
@@ -87,7 +93,7 @@
                         {{-- * End Arrow Up --}}
 
                         {{-- * Content --}}
-                        <div class=" relative bottom-12">
+                        <div class=" relative bottom-12 hiddenDown">
                             <p class="xs:text-4xl text-center text-background">
                                 <i class="bi bi-tools"></i>
                             </p>
@@ -95,7 +101,7 @@
                                 {{ __("EXPERTISE") }}
                             </p>
                             <p class="text-background xs:text-sm text-center xs:mt-3">
-                                {{__("Basic PHP, Basic Javascript, Laravel, MySQL, TailwindCSS, Git,
+                                {{__("Laravel, MySQL, TailwindCSS, Git, Basic PHP, Basic Javascript,
                                 Googling Skills.")}}
                             </p>
                         </div>
@@ -116,7 +122,7 @@
                         {{-- * End Arrow Up --}}
 
                         {{-- * Content --}}
-                        <div class="xs:relative bottom-12" >
+                        <div class="xs:relative bottom-12 hiddenDown" >
                             <p class="xs:text-4xl text-center text-background">
                             <i class="bi bi-book-half"></i>
                             </p>
@@ -136,7 +142,7 @@
                 {{-- ! Secondary Expertise --}}
                 <section class="w-full h-1/2 bg-primary order-2 p-5" id="secondary-expertise">
                     {{-- * Content --}}
-                    <div class="relative top-14">
+                    <div class="relative top-14 hiddenUp">
                         <p class="xs:text-5xl text-center text-background">
                             <i class="bi bi-patch-plus"></i>
                         </p>
@@ -206,14 +212,18 @@
                 </section>
                 {{-- ! End Recent Project --}}
 
+                {{-- ! CV --}}
+
+                {{-- ! End CV --}}
+
                 {{-- ! Social Media --}}
                 <section class="w-full h-1/4 p-5 bg-secondary order-6" id="contacts">
                     {{-- * Icons --}}
-                    <p class="text-5xl xs:text-xl text-center text-background">
+                    <p class="xs:text-4xl text-center text-background">
                         <i class="bi bi-person-lines-fill"></i>
                     </p>
                     <p class="font-display xs:text-sm text-center text-background text-xl">
-                        {{ __("CONTACT ME") }}
+                        {{ __("GET IN TOUCH") }}
                     </p>
                     {{-- * End Icons --}}
 

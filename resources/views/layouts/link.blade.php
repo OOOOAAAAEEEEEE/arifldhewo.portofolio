@@ -1,7 +1,8 @@
 @vite('resources/css/app.css')
-{{-- * Loading Placeholder --}}
+{{-- * Loading PlainCSS --}}
 <link rel="stylesheet" href="{{ URL::asset("css/placeholder-loading.min.css") }}">
-{{-- * End Loading Placeholder --}}
+<link rel="stylesheet" href="{{ URL::asset("css/style.css") }}">
+{{-- * End Loading PlainCSS --}}
 {{-- *SweetAlert --}}
 <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css" rel="stylesheet"/>
 {{-- *End SweetAlert --}}
