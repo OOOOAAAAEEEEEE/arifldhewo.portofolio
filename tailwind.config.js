@@ -10,7 +10,8 @@ module.exports = {
             screens: {
                 xs: "279px", // Galaxy Fold
                 vvs: "359px", // Galaxy S8+
-                vs: "374px", // iPhone SE
+                vs: "389px", // Pixel5, iPhone12Pro,
+                s: "410px",
             },
             colors: {
                 primary: "#222831", //dark

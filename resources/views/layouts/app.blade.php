@@ -7,7 +7,7 @@
         <title>Portofolio - arifldhewo</title>
     </head>
     <body>
-        <main>
+        <main class="bg-primary">
             @include('components.onload')
             @yield("content")
         </main>

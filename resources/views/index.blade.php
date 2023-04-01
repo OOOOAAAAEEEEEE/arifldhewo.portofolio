@@ -15,7 +15,7 @@
                 <section class="w-full h-full bg-primary overflow-hidden" id="home">
                     {{-- * Language Switcher --}}
                     <div class="hiddenRight">
-                        <div class="w-20 h-10 flex justify-evenly relative xs:top-4 xs:left-44 xs:translate-x-2" id="toggle" onclick="language()">
+                        <div class="w-20 h-10 flex justify-evenly relative xs:top-4 xs:left-44 xs:translate-x-2 vs:left-72 vvs:left-64" id="toggle" onclick="language()">
                             <span class="absolute w-10 h-10 text-center -translate-x-5 rounded-l-2xl transition" id="id">
                                 <p class="relative top-2 text-background font-bold not-italic">ID</p>
                             </span>
@@ -25,7 +25,6 @@
                             </span>
                         </div>
                     </div>
-                    
                     {{-- * End Language Switcher --}}
 
                     <div class="xs:p-5 xs:relative xs:top-16">
@@ -39,8 +38,8 @@
                             <p class="font-display text-6xl text-tertiary">
                                 {{ __("Hello There!!!") }}
                             </p>
-                            <p class="text-background xs:text-xl mt-6 text-2xl">
-                                {{ __("I'm Arif Laksonodhewo. Welcome to my") }} <span class="text-tertiary font-extrabold">portofolio</span> page
+                            <p class="text-background xs:text-xl vs:text-2xl mt-6 text-2xl">
+                                {{ __("I'm Arif Laksonodhewo. Welcome to my") }} <span class="text-tertiary font-extrabold">{{ __("personal") }}</span> {{ __("page") }}
                             </p>
                             <div class="w-20 h-10 bg-tertiary animate-pulse rounded-full mt-10 hover:transition hover:scale-110">
                                 <a href="#primary-expertise" class="text-background relative top-2 left-3.5"> 
@@ -58,13 +57,13 @@
                 <section class="w-full h-1/2 bg-tertiary p-5 relative order-4" id="about">
                     {{-- * Content --}}
                     <div class="xs:relative xs:top-6 hiddenUp">
-                        <p class="xs:text-4xl text-center text-background xs:mb-3">
+                        <p class="xs:text-4xl vs:text-5xl text-center text-background xs:mb-3">
                             <i class="bi bi-person"></i>
                         </p>
-                        <p class="font-display xs:text-sm text-center text-background">
+                        <p class="font-display xs:text-sm vs:text-xl vvs:text-lg text-center text-background">
                             {{ __("ABOUT ME") }}
                         </p>
-                        <p class="xs:text-sm text-background xs:mt-3 xs:text-center">
+                        <p class="xs:text-sm vs:text-lg vvs:text-md text-background xs:mt-3 xs:text-center">
                             {{__("Right now i'm currently studying web development as fullstack
                             developer, and a hardware & software computer enthusiast")}}
                         </p>
@@ -94,13 +93,13 @@
 
                         {{-- * Content --}}
                         <div class=" relative bottom-12 hiddenDown">
-                            <p class="xs:text-4xl text-center text-background">
+                            <p class="xs:text-4xl vs:text-5xl text-center text-background">
                                 <i class="bi bi-tools"></i>
                             </p>
-                            <p class="font-display xs:text-sm text-center text-background xs:mt-3">
+                            <p class="font-display xs:text-sm vvs:text-lg vs:text-xl text-center text-background xs:mt-3">
                                 {{ __("EXPERTISE") }}
                             </p>
-                            <p class="text-background xs:text-sm text-center xs:mt-3">
+                            <p class="text-background xs:text-sm vvs:text-md vs:text-lg text-center xs:mt-3">
                                 {{__("Laravel, MySQL, TailwindCSS, Git, Basic PHP, Basic Javascript,
                                 Googling Skills.")}}
                             </p>
@@ -123,13 +122,13 @@
 
                         {{-- * Content --}}
                         <div class="xs:relative bottom-12 hiddenDown" >
-                            <p class="xs:text-4xl text-center text-background">
-                            <i class="bi bi-book-half"></i>
+                            <p class="xs:text-4xl vs:text-5xl text-center text-background">
+                                <i class="bi bi-book-half"></i>
                             </p>
-                            <p class="font-display xs:text-sm text-center text-background mt-3 text-xl">
+                            <p class="font-display xs:text-sm vs:text-xl vvs:text-lg text-center text-background mt-3 text-xl">
                                 {{ __("INTEREST") }}
                             </p>
-                            <p class="text-background xs:text-sm text-center mt-3">
+                            <p class="text-background xs:text-sm vs:text-lg vvs:text-md text-center mt-3">
                                 {{__("Vue.js, Inertia.js, Single Page Impelementation(SPA), API
                                 Implementation.")}}
                             </p>
@@ -143,20 +142,20 @@
                 <section class="w-full h-1/2 bg-primary order-2 p-5" id="secondary-expertise">
                     {{-- * Content --}}
                     <div class="relative top-14 hiddenUp">
-                        <p class="xs:text-5xl text-center text-background">
+                        <p class="xs:text-5xl vs:text-6xl text-center text-background">
                             <i class="bi bi-patch-plus"></i>
                         </p>
-                        <p class="font-display xs:text-sm text-center text-background mt-3.5 text-xl">
+                        <p class="font-display xs:text-sm vs:text-xl vvs:text-lg text-center text-background mt-3.5 text-xl">
                             {{ __("SECONDARY EXPERTISE") }}
                         </p>
-                        <p class="text-background xs:text-sm mt-3 text-center">
+                        <p class="text-background xs:text-sm vs:text-lg vvs:text-md mt-3 text-center">
                             {{ __("JMeter, Katalon Studio(Web Testing).") }}
                         </p>
                     </div>
                     {{-- * End Content --}}
 
                     {{-- * Arrow Down --}}
-                    <div class="w-9 h-9 rounded-full scale-150 relative xs:top-1/2 xs:-translate-y-16 xs:left-1/2 xs:-translate-x-1/2 flex animate-pulse justify-center">
+                    <div class="w-9 h-9 rounded-full scale-150 relative xs:top-1/2 vs:top-40 xs:-translate-y-16 xs:left-1/2 xs:-translate-x-1/2 flex animate-pulse justify-center">
                         <a href="#interest" class="text-tertiary">
                             <i class="bi bi-arrow-down relative top-1.5 translate-y-0.5"></i>
                         </a>
@@ -166,49 +165,53 @@
                 {{-- ! Secondary Expertise --}}
 
                 {{-- ! Recent Project --}}
-                <section id="projects" class="w-full max-h-full xs:h-full bg-primary order-5 p-5">
+                <section id="projects" class="overflow-hidden w-full max-h-full xs:h-full bg-primary order-5 p-5">
                         {{-- * Icons --}}
-                        <p class="xs:text-4xl text-center text-background">
-                            <i class="bi bi-folder-fill"></i>
-                        </p>
-                        <p class="font-display xs:text-sm text-center text-background text-xl">
-                            {{ __("RECENT PROJECTS") }}
-                        </p>
+                        <div class="hiddenUp">
+                            <p class="xs:text-4xl text-center text-background">
+                                <i class="bi bi-folder-fill"></i>
+                            </p>
+                            <p class="font-display xs:text-sm text-center text-background text-xl">
+                                {{ __("RECENT PROJECTS") }}
+                            </p>
+                        </div>
+                        
                         {{-- * End Icons --}}
 
                         {{-- * Card --}}
-
+                        <div class="hiddenLeft">
                             {{-- * Arrow Up --}}
-                            <div class="xs:w-9 xs:bg-secondary xs:h-9 xs:rounded-full  relative xs:top-4 xs:left-1/2 xs:-translate-x-1/2 flex animate-pulse justify-center">
+                            <div class="xs:w-9  xs:bg-secondary xs:h-9 xs:rounded-full  relative xs:top-4 xs:left-1/2 xs:-translate-x-1/2 flex animate-pulse justify-center">
                                 <a href="#interest" class="text-background">
                                     <i class="bi bi-arrow-up xs:relative xs:text-2xl xs:top-0.5"></i>
                                 </a>
                             </div>
                             {{-- * End Arrow Up --}}
 
-                        <div class="xs:max-w-xs xs:mx-auto xs:rounded-t-xl xs:overflow-hidden xs:mt-0 xs:mb-0">
-                            <img src="https://placehold.co/400" alt="recent-project"/>
-                            <div class="xs:p-5 bg-background xs:rounded-b-xl">
-                                {{-- * Content --}}
-                                <h5 class="xs:mb-2 xs:text-2xl font-display">
-                                    {{ __("Judul disini") }}
-                                </h5>
-                                <p>
-                                    {{__("Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Similique eius repellendus laboriosam optio voluptatum quae
-                                    eos animi eveniet obcaecati pariatur!")}}
-                                </p>
-                                {{-- * End Content --}}
+                            <div class="xs:max-w-xs xs:mx-auto xs:rounded-t-xl xs:overflow-hidden xs:mt-0 xs:mb-0">
+                                <img src="https://placehold.co/400" alt="recent-project"/>
+                                <div class="xs:p-5 bg-background xs:rounded-b-xl">
+                                    {{-- * Content --}}
+                                    <h5 class="xs:mb-2 xs:text-2xl font-display">
+                                        {{ __("Judul disini") }}
+                                    </h5>
+                                    <p>
+                                        {{__("Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        Similique eius repellendus laboriosam optio voluptatum quae
+                                        eos animi eveniet obcaecati pariatur!")}}
+                                    </p>
+                                    {{-- * End Content --}}
+                                </div>
+                                {{-- * Arrow Down --}}
+                                <div class="xs:w-9 xs:h-9 xs:rounded-full xs:relative xs:bottom-4 -translate-y-0.5 xs:left-1/2 xs:-translate-x-1/2 bg-secondary xs:flex xs:justify-center xs:animate-pulse">
+                                    <a href="#contacts" class="xs:relative xs:top-1.5 text-background"> 
+                                        <i class="bi bi-arrow-down xs:relative xs:text-xl xs:bottom-0.5"></i>
+                                    </a>
+                                </div>
+                                {{-- * End Arrow Down --}}
                             </div>
-                            {{-- * Arrow Down --}}
-                            <div class="xs:w-9 xs:h-9 xs:rounded-full xs:relative xs:bottom-4 -translate-y-0.5 xs:left-1/2 xs:-translate-x-1/2 bg-secondary xs:flex xs:justify-center xs:animate-pulse">
-                                <a href="#contacts" class="xs:relative xs:top-1.5 text-background"> 
-                                    <i class="bi bi-arrow-down xs:relative xs:text-xl xs:bottom-0.5"></i>
-                                </a>
-                            </div>
-                            {{-- * End Arrow Down --}}
-                        </div>
                         {{-- * End Card --}}
+                        </div>
                 </section>
                 {{-- ! End Recent Project --}}
 
@@ -217,18 +220,20 @@
                 {{-- ! End CV --}}
 
                 {{-- ! Social Media --}}
-                <section class="w-full h-1/4 p-5 bg-secondary order-6" id="contacts">
+                <section class="w-full h-1/4 p-5 bg-secondary order-6 overflow-hidden" id="contacts">
                     {{-- * Icons --}}
-                    <p class="xs:text-4xl text-center text-background">
-                        <i class="bi bi-person-lines-fill"></i>
-                    </p>
-                    <p class="font-display xs:text-sm text-center text-background text-xl">
-                        {{ __("GET IN TOUCH") }}
-                    </p>
+                    <div class="hiddenUp">
+                        <p class="xs:text-4xl vs:mt-3 text-center text-background">
+                            <i class="bi bi-person-lines-fill"></i>
+                        </p>
+                        <p class="font-display xs:text-sm vs:text-xl text-center text-background text-xl">
+                            {{ __("GET IN TOUCH") }}
+                        </p>
+                    </div>
                     {{-- * End Icons --}}
 
                     {{-- * Content --}}
-                    <div class="flex justify-between mt-5">
+                    <div class="flex justify-evenly xs:mt-5 vs:mt-7 hiddenRight">
                         {{-- * GITHUB --}}
                         <a class="text-background text-4xl" href="https://github.com/OOOOAAAAEEEEEE">
                             <i class="bi bi-github"></i>
@@ -261,12 +266,12 @@
 
                 {{-- ! Credit --}}
                 <footer class="w-full h-16 bg-primary order-7">
-                    <p class="text-background xs:text-xs text-center relative top-2">
+                    <p class="text-background xs:text-xs text-center relative top-2 hiddenUp">
                         {{ __("Made with Laravel & TailwindCSS") }}
                     </p>
                     <div class="flex flex-wrap relative top-4 justify-center">
-                        <img class="w-5 inline mr-5" src="{{ URL::asset('image/laravel.svg') }}" alt="laravel-logo">
-                        <img class="w-8 inline" src="{{ URL::asset('image/tailwindcss.svg') }}" alt="tailwind-logo">
+                        <img class="w-5 inline mr-5 hiddenRight" src="{{ URL::asset('image/laravel.svg') }}" alt="laravel-logo">
+                        <img class="w-8 inline hiddenRight" src="{{ URL::asset('image/tailwindcss.svg') }}" alt="tailwind-logo">
                     </div>
                 </footer>
                 {{-- ! End Credit --}}
