@@ -4,7 +4,7 @@
 
     {{-- * Home Button  --}}
     <div class="home">
-        <a href="#home">
+        <a href="#main_content">
             <i class="bi bi-house-fill z-20 fixed bottom-3 right-3 w-8 h-8 text-center text-2xl rounded-full text-tertiary bg-primary animate-bounce"></i>
         </a>
     </div>
@@ -15,13 +15,13 @@
                 <section class="w-full h-full bg-primary overflow-hidden" id="home">
                     {{-- * Language Switcher --}}
                     <div class="hiddenRight">
-                        <div class="w-20 h-10 flex justify-evenly relative xs:top-4 xs:left-44 xs:translate-x-2 vs:left-72 vvs:left-64" id="toggle" onclick="language()">
-                            <span class="absolute w-10 h-10 text-center -translate-x-5 rounded-l-2xl transition" id="id">
-                                <p class="relative top-2 text-background font-bold not-italic">ID</p>
+                        <div class="vs:w-20 vs:h-10 flex justify-evenly relative xs:top-4 xs:left-44 xs:translate-x-2 vs:left-72 vvs:left-64 s:translate-x-7" id="toggle" onclick="language()">
+                            <span class="absolute vs:w-10 vs:h-10 s:w-12 s:h-12 text-center -translate-x-5 rounded-l-2xl transition" id="id">
+                                <p class="relative top-2 s:top-3 text-background font-bold not-italic">ID</p>
                             </span>
-                            <span class="absolute w-1 h-10 bg-primary"></span>
-                            <span class="absolute w-10 h-10 text-center translate-x-5 rounded-r-2xl transition bg-tertiary" id="en">
-                                <p class="relative top-2 text-background font-bold not-italic">EN</p>
+                            <span class="absolute vs:w-1 vs:h-10 s:w-1 s:h-12 s:translate-x-1 bg-primary"></span>
+                            <span class="absolute vs:w-10 vs:h-10 s:w-12 s:h-12 text-center translate-x-5 rounded-r-2xl transition bg-tertiary" id="en">
+                                <p class="relative top-2 s:top-3 text-background font-bold not-italic">EN</p>
                             </span>
                         </div>
                     </div>
@@ -35,15 +35,15 @@
                         </div>
                         {{-- * Content --}}
                         <div class="hiddenLeft">
-                            <p class="font-display text-6xl text-tertiary">
+                            <p class="font-display xs:text-5xl vvs:text-6xl s:text-7xl text-tertiary">
                                 {{ __("Hello There!!!") }}
                             </p>
-                            <p class="text-background xs:text-xl vs:text-2xl mt-6 text-2xl">
+                            <p class="text-background xs:text-xl vs:text-2xl s:text-2xl mt-6 text-2xl">
                                 {{ __("I'm Arif Laksonodhewo. Welcome to my") }} <span class="text-tertiary font-extrabold">{{ __("personal") }}</span> {{ __("page") }}
                             </p>
-                            <div class="w-20 h-10 bg-tertiary animate-pulse rounded-full mt-10 hover:transition hover:scale-110">
-                                <a href="#primary-expertise" class="text-background relative top-2 left-3.5"> 
-                                    Next <i class="bi bi-play-circle-fill"></i>
+                            <div class="xs:w-20 xs:h-10 s:w-24 s:h-12 bg-tertiary animate-pulse rounded-full mt-10 hover:transition hover:scale-110">
+                                <a href="#primary-expertise" class="text-background relative top-2 left-3.5 s:top-3 s:left-6"> 
+                                    {{ __("Next") }} <i class="bi bi-play-circle-fill"></i>
                                 </a>
                             </div>
                         </div>
@@ -71,7 +71,7 @@
                     {{-- * End Content --}}
 
                     {{-- * Arrow Down --}}
-                    <div class="w-9 h-9 rounded-full scale-150 relative xs:top-1/2 xs:-translate-y-28 xs:left-1/2 xs:-translate-x-1/2 flex justify-center animate-pulse">
+                    <div class="w-9 h-9 s:top-44 rounded-full scale-150 relative xs:top-1/2 xs:-translate-y-28 xs:left-1/2 xs:-translate-x-1/2 flex justify-center animate-pulse">
                         <a href="#projects" class="text-background">
                             <i class="bi bi-arrow-down relative top-0 translate-y-0.5"></i>
                         </a>
@@ -220,10 +220,10 @@
                 {{-- ! End CV --}}
 
                 {{-- ! Social Media --}}
-                <section class="w-full h-1/4 p-5 bg-secondary order-6 overflow-hidden" id="contacts">
+                <section class="xs:w-full xss:h-1/4 xs:p-5 vs:p-3 vs:h-1/5 bg-secondary order-6 overflow-hidden" id="contacts">
                     {{-- * Icons --}}
                     <div class="hiddenUp">
-                        <p class="xs:text-4xl vs:mt-3 text-center text-background">
+                        <p class="xs:text-4xl vs:mt-1 s:mt-1 text-center text-background">
                             <i class="bi bi-person-lines-fill"></i>
                         </p>
                         <p class="font-display xs:text-sm vs:text-xl text-center text-background text-xl">
@@ -233,7 +233,7 @@
                     {{-- * End Icons --}}
 
                     {{-- * Content --}}
-                    <div class="flex justify-evenly xs:mt-5 vs:mt-7 hiddenRight">
+                    <div class="flex justify-evenly xs:mt-5 vs:mt-4 hiddenRight">
                         {{-- * GITHUB --}}
                         <a class="text-background text-4xl" href="https://github.com/OOOOAAAAEEEEEE">
                             <i class="bi bi-github"></i>
